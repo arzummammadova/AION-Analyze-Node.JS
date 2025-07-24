@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2021",          // Hədəf JavaScript versiyası
+    "module": "commonjs",        // Modul sistemi
+    "outDir": "./dist",          // Kompilyasiya olunmuş JavaScript fayllarının çıxış qovluğu
+    "rootDir": "./src",          // Mənbə TypeScript fayllarının kök qovluğu
+    "strict": true,              // Bütün strict-mode tip yoxlamalarını aktivləşdir
+    "esModuleInterop": true,     // CommonJS və ES Modullar arasında uyğunluğu təmin et
+    "skipLibCheck": true,        // Bütün .d.ts fayllarının tip yoxlamasını burax
+    "forceConsistentCasingInFileNames": true // Fayl adlarında böyük/kiçik hərflərin uyğunluğunu təmin et
+  },
+  "include": ["src/**/*.ts"],    // Kompilyasiya olunacaq faylları daxil et
+  "exclude": ["node_modules"]    // Kompilyasiyadan kənar qalan qovluqlar
+}
