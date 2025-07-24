@@ -6,7 +6,6 @@ import axios from 'axios';
 import FormData from 'form-data';
 
 dotenv.config();
-
 const app = express();
 const port = process.env.PORT || 5000;
 const FASTAPI_URL = process.env.FASTAPI_URL || 'http://localhost:8000';
@@ -16,7 +15,7 @@ app.use(cors());
 const storage = multer.memoryStorage();
 const upload = multer({ 
     storage: storage,
-    limits: { fileSize: 10 * 1024 * 1024 },
+    limits: { fileSize: 11 * 1024 * 1024 },
 });
 
 app.get('/', (req, res) => {
